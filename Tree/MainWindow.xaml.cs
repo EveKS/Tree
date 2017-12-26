@@ -31,14 +31,17 @@ namespace Tree
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.MiddleButton == MouseButtonState.Pressed)
+            if (e.RightButton == MouseButtonState.Pressed)
             {
-                this.Close();
-
                 e.Handled = true;
-            }
 
-            old = e.GetPosition(null);
+                this.Close();
+            }
+            else
+            {
+
+                old = e.GetPosition(null);
+            }
         }
 
         private void Image_MouseMove(object sender, MouseEventArgs e)
