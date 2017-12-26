@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        xmlns:local="clr-namespace:Tree"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="220" Width="150"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ShowInTaskbar="False"
+        Loaded="Window_Loaded"
+        Activated="Window_Activated">
+    <Grid>
+        <Image gif:AnimationBehavior.SourceUri="/elka.gif"
+            x:Name="gifImage" Stretch="None"
+            MouseDown="Image_MouseDown" MouseMove="Image_MouseMove"/>
+    </Grid>
+</Window>
